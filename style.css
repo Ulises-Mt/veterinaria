@@ -2,7 +2,7 @@
 *{
     margin: 0; 
     padding: 0;
-    font-family: Verdana, Geneva, Tahom , sans-serif;
+    font-family: Verdana, Geneva, Tahoma , sans-serif;
 }
 
 /* HEADER */ 
@@ -13,7 +13,7 @@ header{
     color: #fff;
     display: flex;
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
 }
 .logo{
     text-transform: uppercase;
@@ -35,23 +35,25 @@ header{
     display: none;
     transition: 0.4s;
 }
+
 .mostrar-menu{
     order:1;
 }
 
 .menu a:hover,
-.mostrar-menu, 
+.mostrar-menu:hover, 
 .esconder-menu:hover{
     color: #00e0c7;
 }
 
-#check {
-   /display: none;
+#check{
+   display : none;
 }
+
 /* RESPONSIVE */
 @media(max-width: 768px){
     /*HEADER*/
-    .mostrar-menu
+    .mostrar-menu,
     .esconder-menu{
         display: block;
     }
