@@ -8,7 +8,7 @@
 /* HEADER */ 
 header{
     height: 100px;
-    background: #4d4d5c;
+    background: #006270;
     padding: 0 50px;
     color: #fff;
     display: flex;
@@ -17,7 +17,7 @@ header{
 }
 .logo{
     text-transform: uppercase;
-    color: #6cc091;
+    color: #00e0c7;
     font-weight: 200;
 }
 .menu a{
@@ -42,11 +42,11 @@ header{
 .menu a:hover,
 .mostrar-menu, 
 .esconder-menu:hover{
-    color: #6cc091;
+    color: #00e0c7;
 }
 
 #check {
-    display: none;
+   /display: none;
 }
 /* RESPONSIVE */
 @media(max-width: 768px){
