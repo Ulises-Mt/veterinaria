@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaPet</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">VitaPet</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu"> 
+            <a href="index.html">Inicio</a>
+            <a href="sobre-nosotros.html">Sobre nosotros</a>
+            <a href="#">Base de datos</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+
+    <section id="registrar">
+        <h4 id="h4-registro">Registra un paciente</h4>
+        <h5>Tipo de animal</h5>
+
+        <!-- Selector de animales -->
+        <form id="animalForm">
+            <label for="animal">Elige un animal:</label>
+            <select id="animal" name="animal">
+                <option value="">--Selecciona--</option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hámster</option>
+                <option value="ave">Ave</option>
+            </select>
+        </form>
+
+        <!-- Contenedor de preguntas -->
+        <div id="preguntas">
+            
+            <!-- Preguntas para Perro -->
+            <div id="perro" class="hidden">
+                <h5>Información sobre el canino</h5>
+                <label>Nombre del perro?</label>
+                <input type="text" name="nombre-perro">
+                <label>¿Qué raza es?</label>
+                <input type="text" name="raza-perro">
+                <label>Edad del perro?</label>
+                <input type="number" name="edad-perro">
+                <label>Motivo del ingreso?</label>
+                <input type="text" name="motivo-ingreso-perro">
+                <label>Nombre del dueno</label>
+                <input type="text" name="nombre-dueno-perro">
+                <label>Numero telefonico</label>
+                <input type="number" name="numero-telefonico-perro">
+            </div>
+
+            <!-- Preguntas para Gato -->
+            <div id="gato" class="hidden">
+                <h5>Información sobre el felino</h5>
+                <label>Nombre del gato</label>
+                <input type="text" name="nombre-gato">
+                <label>Que raza es?</label>
+                <input type="text" name="raza-gato">
+                <label>Edad del gato?</label>
+                <input type="number" name="edad-gato">
+                <label>Motivo del ingreso?</label>
+                <input type="text" name="motivo-ingreso-gato">
+                <label>Nombre del dueno?</label>
+                <input type="text" name="nombre-dueno-gato">
+                <label>Numero telefonico</label>
+                <input type="number" name="numero-telefonico-gato">
+             </div>
+
+            <!-- Preguntas para Hámster -->
+            <div id="hamster" class="hidden">
+                <h5>Información sobre el hámster</h5>
+                <label>Nombre del hámster</label>
+                <input type="text" name="nombre-hamster">
+                <label>Edad del hamster?</label>
+                <input type="number" name="edad-hamster">
+                <label>Motivo del ingreso?</label>
+                <input type="text" name="motivo-ingreso-hamster">
+                <label>Nombre del dueno?</label>
+                <input type="text" name="nombre-dueno-hamster">
+                <label>Numero telefonico</label>
+                <input type="number" name="numero-telefonico-hamster">
+            </div>
+
+            <!-- Preguntas para Ave -->
+            <div id="ave" class="hidden">
+                <h5>Información sobre el ave</h5>
+                <label>Nombre del ave?</label>
+                <input type="text" name="nombre-ave">
+                <label>Raza del ave?</label>
+                <input type="text" name="raza-ave">
+                <label>Edad del ave?</label>
+                <input type="number" name="edad-ave">
+                <label>Motivo del ingreso?</label>
+                <input type="text" name="motivo-ingreso-ave">
+                <label>Nombre del dueno?</label>
+                <input type="text" name="nombre-dueno-ave">
+                <label>Numero telefonico</label>
+                <input type="number" name="numero-telefonico-ave">
+            </div>
+        </div>
+
+        <a href="#" class="boton-subir">Subir datos de paciente</a>
+
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
