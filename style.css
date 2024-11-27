@@ -256,23 +256,64 @@ header{
 /*--------------registro---------------*/
 
 #registrar{
-    background: #00e0c7;
-    margin: 50px 20px;
+    background: #2d5c66;
+    padding: 50px 0px;
+    color:#fff;
+}
+
+#registrar h4{
     text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#registrar form{
+max-width: 80%;
+margin: 0 auto;
+}
+/* 
+.registrar-form{
+display: flex;
+}
+*/
+.registrar-form div{
+    padding:10; 
+    flex: 1 ;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, 
+form textarea{
+    background: #00e0c7;
+    border-radius: 10px;
+    border: 2px solid #8dcca9;
+    padding: 10px 5px;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+}
+
+#registrar h5 {
+    margin: 20px 20px;
 }
 
 .boton-subir{
+
     display: inline-block;
     text-decoration: none;
     color: #fff;
     padding: 10px 30px ;
-    border: 3px solid #006270;
+    border: 3px solid #00e0c7;
     border-radius: 30px;
     margin: 15px;
     transition: all 0.4s;
 }
 
 .boton-subir:hover{
-    background: #fff;
-    color: #000;
+    background: #00e0c7;
+    color: #fff;
 }

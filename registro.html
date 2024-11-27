@@ -29,93 +29,95 @@
     </header>
 
     <section id="registrar">
-        <h4 id="h4-registro">Registra un paciente</h4>
-        <h5>Tipo de animal</h5>
+        <h4>Registra un paciente</h4>
+        <form action="#">
+        <div class="registrar-form">
 
-        <!-- Selector de animales -->
-        <form id="animalForm">
-            <label for="animal">Elige un animal:</label>
-            <select id="animal" name="animal">
-                <option value="">--Selecciona--</option>
-                <option value="perro">Perro</option>
-                <option value="gato">Gato</option>
-                <option value="hamster">Hámster</option>
-                <option value="ave">Ave</option>
-            </select>
+            <!-- Selector de animales -->
+                <label for="animal">Que tipo de animal registraras:</label>
+                <select id="animal" name="animal">
+                    <option value="">--Selecciona--</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="hamster">Hámster</option>
+                    <option value="ave">Ave</option>
+                </select>
+
+            <!-- Contenedor de preguntas -->
+            <div id="preguntas">
+                
+                <!-- Preguntas para Perro -->
+                <div id="perro" class="hidden">
+                    <h5>Información sobre el canino</h5>
+                    <label>Nombre del perro?</label>
+                    <input type="text" name="nombre-perro">
+                    <label>¿Qué raza es?</label>
+                    <input type="text" name="raza-perro">
+                    <label>Edad del perro?</label>
+                    <input type="number" name="edad-perro">
+                    <label>Motivo del ingreso?</label>
+                    <input type="text" name="motivo-ingreso-perro">
+                    <label>Nombre del dueno</label>
+                    <input type="text" name="nombre-dueno-perro">
+                    <label>Numero telefonico</label>
+                    <input type="number" name="numero-telefonico-perro">
+                    <a href="#" class="boton-subir">Subir datos de paciente</a>
+                </div>
+
+                <!-- Preguntas para Gato -->
+                <div id="gato" class="hidden">
+                    <h5>Información sobre el felino</h5>
+                    <label>Nombre del gato</label>
+                    <input type="text" name="nombre-gato">
+                    <label>Que raza es?</label>
+                    <input type="text" name="raza-gato">
+                    <label>Edad del gato?</label>
+                    <input type="number" name="edad-gato">
+                    <label>Motivo del ingreso?</label>
+                    <input type="text" name="motivo-ingreso-gato">
+                    <label>Nombre del dueno?</label>
+                    <input type="text" name="nombre-dueno-gato">
+                    <label>Numero telefonico</label>
+                    <input type="number" name="numero-telefonico-gato">
+                    <a href="#" class="boton-subir">Subir datos de paciente</a>
+                </div>
+
+                <!-- Preguntas para Hámster -->
+                <div id="hamster" class="hidden">
+                    <h5>Información sobre el hámster</h5>
+                    <label>Nombre del hámster</label>
+                    <input type="text" name="nombre-hamster">
+                    <label>Edad del hamster?</label>
+                    <input type="number" name="edad-hamster">
+                    <label>Motivo del ingreso?</label>
+                    <input type="text" name="motivo-ingreso-hamster">
+                    <label>Nombre del dueno?</label>
+                    <input type="text" name="nombre-dueno-hamster">
+                    <label>Numero telefonico</label>
+                    <input type="number" name="numero-telefonico-hamster">
+                    <a href="#" class="boton-subir">Subir datos de paciente</a>
+                </div>
+
+                <!-- Preguntas para Ave -->
+                <div id="ave" class="hidden">
+                    <h5>Información sobre el ave</h5>
+                    <label>Nombre del ave?</label>
+                    <input type="text" name="nombre-ave">
+                    <label>Raza del ave?</label>
+                    <input type="text" name="raza-ave">
+                    <label>Edad del ave?</label>
+                    <input type="number" name="edad-ave">
+                    <label>Motivo del ingreso?</label>
+                    <input type="text" name="motivo-ingreso-ave">
+                    <label>Nombre del dueno?</label>
+                    <input type="text" name="nombre-dueno-ave">
+                    <label>Numero telefonico</label>
+                    <input type="number" name="numero-telefonico-ave">
+                    <a href="#" class="boton-subir">Subir datos de paciente</a>
+                </div>
+            </div>
         </form>
-
-        <!-- Contenedor de preguntas -->
-        <div id="preguntas">
-            
-            <!-- Preguntas para Perro -->
-            <div id="perro" class="hidden">
-                <h5>Información sobre el canino</h5>
-                <label>Nombre del perro?</label>
-                <input type="text" name="nombre-perro">
-                <label>¿Qué raza es?</label>
-                <input type="text" name="raza-perro">
-                <label>Edad del perro?</label>
-                <input type="number" name="edad-perro">
-                <label>Motivo del ingreso?</label>
-                <input type="text" name="motivo-ingreso-perro">
-                <label>Nombre del dueno</label>
-                <input type="text" name="nombre-dueno-perro">
-                <label>Numero telefonico</label>
-                <input type="number" name="numero-telefonico-perro">
-            </div>
-
-            <!-- Preguntas para Gato -->
-            <div id="gato" class="hidden">
-                <h5>Información sobre el felino</h5>
-                <label>Nombre del gato</label>
-                <input type="text" name="nombre-gato">
-                <label>Que raza es?</label>
-                <input type="text" name="raza-gato">
-                <label>Edad del gato?</label>
-                <input type="number" name="edad-gato">
-                <label>Motivo del ingreso?</label>
-                <input type="text" name="motivo-ingreso-gato">
-                <label>Nombre del dueno?</label>
-                <input type="text" name="nombre-dueno-gato">
-                <label>Numero telefonico</label>
-                <input type="number" name="numero-telefonico-gato">
-             </div>
-
-            <!-- Preguntas para Hámster -->
-            <div id="hamster" class="hidden">
-                <h5>Información sobre el hámster</h5>
-                <label>Nombre del hámster</label>
-                <input type="text" name="nombre-hamster">
-                <label>Edad del hamster?</label>
-                <input type="number" name="edad-hamster">
-                <label>Motivo del ingreso?</label>
-                <input type="text" name="motivo-ingreso-hamster">
-                <label>Nombre del dueno?</label>
-                <input type="text" name="nombre-dueno-hamster">
-                <label>Numero telefonico</label>
-                <input type="number" name="numero-telefonico-hamster">
-            </div>
-
-            <!-- Preguntas para Ave -->
-            <div id="ave" class="hidden">
-                <h5>Información sobre el ave</h5>
-                <label>Nombre del ave?</label>
-                <input type="text" name="nombre-ave">
-                <label>Raza del ave?</label>
-                <input type="text" name="raza-ave">
-                <label>Edad del ave?</label>
-                <input type="number" name="edad-ave">
-                <label>Motivo del ingreso?</label>
-                <input type="text" name="motivo-ingreso-ave">
-                <label>Nombre del dueno?</label>
-                <input type="text" name="nombre-dueno-ave">
-                <label>Numero telefonico</label>
-                <input type="number" name="numero-telefonico-ave">
-            </div>
         </div>
-
-        <a href="#" class="boton-subir">Subir datos de paciente</a>
-
     </section>
 
     <script src="script.js" defer></script>
