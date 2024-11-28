@@ -89,15 +89,19 @@ header{
 
 .boton-registrar{
     text-decoration: none;
-    color: #000;
+    background: #0056b3;
+    color: #fff;
     border: solid #006270;
     padding: 20px , 40px;
     align-self: baseline;
     transition: all 0,4s ;
+    border-radius: 5px;
+    font-size: 20px;
+
 }
 
 .boton-registrar:hover{
-    background: #00e0c7;
+    background: #007bff;
 }
 
 /*size imagen*/
