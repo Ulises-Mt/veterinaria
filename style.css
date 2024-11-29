@@ -260,64 +260,59 @@ header{
 /*--------------registro---------------*/
 
 #registrar{
-    background: #2d5c66;
-    padding: 50px 0px;
-    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
-#registrar h4{
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-#registrar form{
-max-width: 80%;
-margin: 0 auto;
-}
-/* 
 .registrar-form{
-display: flex;
-}
-*/
-.registrar-form div{
-    padding:10; 
-    flex: 1 ;
-}
-
-form label{
-    display: block;
-    margin-bottom: 10px;
-}
-
-form input, 
-form textarea{
-    background: #00e0c7;
-    border-radius: 10px;
-    border: 2px solid #8dcca9;
-    padding: 10px 5px;
-    outline: 0;
-    color: #fff;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
+    max-width: 400px;
 }
 
-#registrar h5 {
-    margin: 20px 20px;
+section h4{
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    flex-direction: column;
 }
 
-.boton-subir{
-
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 30px ;
-    border: 3px solid #00e0c7;
-    border-radius: 30px;
-    margin: 15px;
-    transition: all 0.4s;
+.registrar-form label{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
 }
 
-.boton-subir:hover{
-    background: #00e0c7;
-    color: #fff;
+.regitrar-form input,
+select,
+button{
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
