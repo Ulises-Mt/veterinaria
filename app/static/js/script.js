@@ -83,8 +83,8 @@ function mostrarDatos() {
 }
 
 // Botón para mostrar los datos manualmente
-document.getElementById('mostrar-datos').addEventListener('click', (e) => {
-  e.preventDefault();
+document.getElementById('mostrar-datos').addEventListener('click', () => {
+  console.log('Botón "Mostrar Base de datos" en base-datos.html presionado.');
   mostrarDatos();
 });
 

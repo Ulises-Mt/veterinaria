@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>VitaPet</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">VitaPet</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu"> 
+            <a href="index.html">Inicio</a>
+            <a href="sobre-nosotros.html">Sobre nosotros</a>
+            <a href="base-datos.html">Base de datos</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+
+    <section id="base-datos">
+        <form id="registro-form">
+            <div id="stilo-base-datos">
+        
+                <button id="mostrar-datos">Mostrar Base de datos</button>
+        </form>
+
+                <H6 id="titulo-base-datos">Base de datos</H6>
+                <div id="datos-registrados">
+                <!--Aqui se muestran los animales registrados-->
+                </div>
+
+                <button id="borrar-datos">Borrar Base de Datos</button>
+            </div>
+    </section>
+
+
+        <script src="../static/js/script.js" defer></script>
+
+    
+</body>
+</html>

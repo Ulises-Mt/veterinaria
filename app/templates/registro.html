@@ -9,7 +9,7 @@
             display: none;
         }
     </style>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body id="body-registro">
     <header>
@@ -21,7 +21,7 @@
         <nav class="menu"> 
             <a href="index.html">Inicio</a>
             <a href="sobre-nosotros.html">Sobre nosotros</a>
-            <a href="#">Base de datos</a>
+            <a href="base-datos.html">Base de datos</a>
             <label for="check" class="esconder-menu">
                 &#215
             </label>
@@ -85,6 +85,8 @@
                     <h5>Información sobre el hámster</h5>
                     <label>Nombre del hámster</label><br>
                     <input type="text" id="nombre-hamster" name="nombre-hamster"><br>
+                    <label>Raza del hamster?</label><br>
+                    <input type="text" id="raza-hamster" name="raza-hamster"><br>
                     <label>Edad del hamster?</label><br>
                     <input type="number" id="edad-hamster" name="edad-hamster"><br>
                     <label>Motivo del ingreso?</label><br>
@@ -118,14 +120,18 @@
         </div>
     </section>
     
+    <section id="base-datos">
+            <div id="stilo-base-datos">
+                
+                <H6 id="titulo-base-datos">Base de datos</H6>
+                <div id="datos-registrados">
+                <!--Aqui se muestran los animales registrados-->
+                </div>
 
-    <H6>Base de datos</H6>
-    <div id="datos-registrados">
-        <!--aqui se mostrara la base de datos-->
-    </div>
+                <button id="borrar-datos">Borrar Base de Datos</button>
+            </div>
+    </section>
 
-    <button id="borrar-datos">Borrar Base de Datos</button>
-
-    <script src="script.js" defer></script>
+    <script src="../static/js/script.js" defer></script>
 </body>
 </html>

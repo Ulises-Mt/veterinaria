@@ -53,7 +53,7 @@ header{
 /*Banner*/
 #banner{
     padding: 0 50px;
-    background-image: url(./imagenes/banner.jpg);
+    background-image: url(../imagenes/banner.jpg);
     height: 50vh; 
     background-size: cover;
     background-position: center;
@@ -296,7 +296,8 @@ section h4{
 
 .regitrar-form input,
 select,
-button{
+button
+{
     width: 100%;
     padding: 0.8rem;
     margin-top: 0.5rem;
@@ -315,4 +316,34 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Base de datos */
+#base-datos{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#estilo-base-datos{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+#titulo-base-datos{
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    flex-direction: column;
 }
