@@ -347,3 +347,33 @@ button:hover {
     margin-bottom: 1rem;
     flex-direction: column;
 }
+
+/* Estilo de la tabla de base de datos */
+
+.tabla-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Para mejor scroll en móviles */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

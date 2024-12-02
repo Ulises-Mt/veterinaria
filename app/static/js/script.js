@@ -1,3 +1,4 @@
+//esconde y solo muestra las preguntas necesarias
 document.addEventListener('DOMContentLoaded', () => {
   const animalSelect = document.getElementById('animal');
   const preguntasDivs = document.querySelectorAll('#preguntas > div');
@@ -32,15 +33,16 @@ form.addEventListener('submit', (e) => {
   }
 
   // Obtiene los datos del formulario
+  const animal = document.getElementById('animal').value;
   const nombre = document.getElementById(`nombre-${selectedAnimal}`).value;
-  const raza = document.getElementById(`raza-${selectedAnimal}`).value || 'No aplica';
+  const raza = document.getElementById(`raza-${selectedAnimal}`).value;
   const edad = document.getElementById(`edad-${selectedAnimal}`).value;
   const motivo = document.getElementById(`motivo-${selectedAnimal}`).value;
   const dueño = document.getElementById(`dueño-${selectedAnimal}`).value;
   const numero = document.getElementById(`numero-${selectedAnimal}`).value;
 
   // Crea un objeto con los datos
-  const registro = { nombre, raza, edad, motivo, dueño, numero };
+  const registro = { animal, nombre, raza, edad, motivo, dueño, numero };
 
   // Recupera los datos existentes en localStorage
   let registros = JSON.parse(localStorage.getItem('registros')) || [];
@@ -70,16 +72,44 @@ function mostrarDatos() {
     return;
   }
 
-  // Crea una lista de los registros
-  const lista = document.createElement('ul');
+  // Crea la tabla y cabecera
+  const tabla = document.createElement('table');
+  tabla.innerHTML = `
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Tipo de Animal</th>
+        <th>Nombre</th>
+        <th>Raza</th>
+        <th>Edad</th>
+        <th>Motivo</th>
+        <th>Dueño</th>
+        <th>Teléfono</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  `;
+
+  // Llena la tabla con los registros
+  const tbody = tabla.querySelector('tbody');
   registros.forEach((registro, index) => {
-    const item = document.createElement('li');
-    item.textContent = `Registro ${index + 1}: Nombre - ${registro.nombre}, Raza - ${registro.raza}, Edad - ${registro.edad}, Motivo - ${registro.motivo}, Dueño - ${registro.dueño}, Número - ${registro.numero}`;
-    lista.appendChild(item);
+    const fila = document.createElement('tr');
+    fila.innerHTML = `
+      <td>${index + 1}</td>
+      <td>${registro.animal}</td>
+      <td>${registro.nombre}</td>
+      <td>${registro.raza}</td>
+      <td>${registro.edad}</td>
+      <td>${registro.motivo}</td>
+      <td>${registro.dueño}</td>
+      <td>${registro.numero}</td>
+    `;
+    tbody.appendChild(fila);
   });
 
-  // Agrega la lista al contenedor
-  contenedorDatos.appendChild(lista);
+  // Agrega la tabla al contenedor
+  contenedorDatos.appendChild(tabla);
 }
 
 // Botón para mostrar los datos manualmente
