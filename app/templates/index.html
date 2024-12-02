@@ -15,9 +15,9 @@
             &#8801
         </label>
         <nav class="menu"> 
-            <a href="index.html">Inicio</a>
-            <a href="sobre-nosotros.html">Sobre nosotros</a>
-            <a href="base-datos.html">Base de datos</a>
+            <a href="{{ url_for('home') }}">Inicio</a>
+            <a href="{{ url_for('sobre_nosotros') }}">Sobre Nosotros</a>
+            <a href="{{ url_for('base_datos') }}">Base de Datos</a>
             <label for="check" class="esconder-menu">
                 &#215
             </label>
@@ -28,7 +28,7 @@
         <div class="contenido-banner">
             <h3>VETERNARIOS COMPROMETIDOS CON UNA SALUD</h3>
             <br>
-            <a href="registro.html" class="boton-registrar">Registrar pasiente</a>
+            <a href="{{ url_for('registro') }}" class="boton-registrar">Registrar pasiente</a>
         </div>
     </section>
 
