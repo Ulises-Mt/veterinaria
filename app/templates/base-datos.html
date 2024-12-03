@@ -17,7 +17,7 @@
         <nav class="menu"> 
             <a href="{{ url_for('home') }}">Inicio</a>
             <a href="{{ url_for('sobre_nosotros') }}">Sobre Nosotros</a>
-            <a href="{{ url_for('base_datos') }}">Base de Datos</a>
+            <a href="{{ url_for('citas') }}">Agenda una cita</a>
             <label for="check" class="esconder-menu">
                 &#215
             </label>
@@ -29,16 +29,16 @@
             <div id="stilo-base-datos">
         
                 <button id="mostrar-datos">Mostrar Base de datos</button>
-        </form>
-        <div class="tabla-responsive">
-            <table>
-                <H6 id="titulo-base-datos">Base de datos</H6>
-                <div id="datos-registrados">
-                <!--Aqui se muestran los animales registrados-->
+                </form>
+                <div class="tabla-responsive">
+                    <table>
+                        <H6 id="titulo-base-datos">Base de datos</H6>
+                        <div id="datos-registrados">
+                        <!--Aqui se muestran los animales registrados-->
+                        </div>
+                    </table>
                 </div>
-            </table>
-        </div>
-                <button id="borrar-datos">Borrar Base de Datos</button>
+                    <button id="borrar-datos">Borrar Base de Datos</button>
             </div>
     </section>
 

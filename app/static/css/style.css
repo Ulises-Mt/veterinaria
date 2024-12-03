@@ -295,7 +295,7 @@ section h4{
 }
 
 .regitrar-form input,
-select,
+#animal,
 button
 {
     width: 100%;
@@ -377,3 +377,53 @@ button:hover {
     background-color: #f2f2f2;
   }
   
+/* Estilo de agendar citas */
+
+#agenda-cita{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#cita-form{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+section h6{
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+#cita-form label{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+#cita-form input,
+#cita-motivo,
+#animal,
+button
+{
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script  src="../static/js/segundoscript.js" defer></script>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>VitaPet</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">VitaPet</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu"> 
+            <a href="{{ url_for('home') }}">Inicio</a>
+            <a href="{{ url_for('sobre_nosotros') }}">Sobre Nosotros</a>
+            <a href="{{ url_for('base_datos') }}">Base de Datos</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+
+    <section id="agenda-cita">
+        <form id="cita-form">
+         <h6>Agenda una cita</h6>
+            <div>
+                <label for="fecha">Selecciona una fecha:</label>
+                <input type="date" id="fecha" name="fecha">
+    
+                <label for="hora">Selecciona una hora:</label><br>
+                <select id="hora" name="hora">
+                    <!-- Las opciones de horas se generarán aquí por JavaScript -->
+                </select>
+                <br>
+                
+                <label for="animal">Que tipo de animal es?</label><br>
+                <select id="animal" name="animal">
+                    <option value="selecciona">--Selecciona--</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="hamster">Hámster</option>
+                    <option value="ave">Ave</option>
+                </select>
+                <br>
+
+                <labe >Como se llama el paciente?</labe>
+                <input id="nombre-paciente" type="text" name="nombre-paciente" >
+
+                <label>Cual es el motivo de su visita?</label><br>
+                <select id="cita-motivo" name="cita-motivo">
+                    <option value="selecciona">---selecciona---</option>
+                    <option value="Baño">Baño</option>
+                    <option value="Consulta">Consulta</option>
+                    <option value="Emergencia">emergencia</option>
+                </select>
+                <br>
+
+                <label>Nombre del dueño</label>
+                <input id="nombre-dueño" type="text" name="nombre-dueño">
+                <label>Numero de telefono</label>
+                <input id="numero-telefonico" type="number" name="telefonico">
+
+                <button type="submit" id="boton-agendar">Agendar cita</button>
+
+            </div>
+         </form>
+    </section>
+
+    <section id="citas-reservadas">
+        <div id="style-citas-agendadas">
+            <div class="tabla-responsive">
+                <table>
+                    <H6 id="titulo-citas">Citas agendadas</H6>
+                    <div id="citas-agendadas">
+                    <!--Aqui se muestran las citas agendadas-->
+                    </div>
+                </table>
+                <div>
+                    <button id="mostrar-citas">Mostrar citas</button>
+                </div>
+            </div>
+            <button id="borrar-citas">Borrar Base de Datos</button>
+        </div>
+    </section>
+    
+</body>
+</html>
