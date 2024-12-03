@@ -31,10 +31,10 @@ Somos [**Vitapet🐾**](http://127.0.0.1:5000 "Conocenos") una web de Clínica V
 
 ## 4. Desarrollo de la solución
 **Clases Python**
-![clases1](clases1.jpg)
-![clases2](clases2.jpg)
-![clases3](clases3.jpg)
-![clases4](clases4.jpg)
+![clases1](app/static/imagenes/clases1.png)
+![clases2](app/static/imagenes/clases2.png)
+![clases3](app/static/imagenes/clases3.png)
+![clases4](app/static/imagenes/clases4.png)
 ## 5. Depuración y Pruebas:
 
 ![pruebas1](app/static/imagenes/diagrama1.jpg)
