@@ -7,10 +7,10 @@ Somos [**Vitapet🐾**](http://127.0.0.1:5000 "Conocenos") una web de Clínica V
 ---
 ### **Contamos con:** 
 * Baño 
-    * Bañamos a tus mascotas. 🐕🐈🐦![B](https://raw.githubusercontent.com/Ulises-Mt/veterinaria/refs/heads/main/imagenes/icono1.png)
+    * Bañamos a tus mascotas. 🐕🐈🐦![B](perrobañado.png)
 * Consultas
-    * Consultas medicas o de revision para cualquiera de tus mascotas.![C](https://raw.githubusercontent.com/Ulises-Mt/veterinaria/refs/heads/main/imagenes/icono2.png)
+    * Consultas medicas o de revision para cualquiera de tus mascotas.![C](animales.png)
 * Servicios
     * Nuestros servicios todo el día todos los días.
-    ![24/7](https://raw.githubusercontent.com/Ulises-Mt/veterinaria/refs/heads/main/imagenes/icono3.png)
+    ![24/7](247.png)
  
