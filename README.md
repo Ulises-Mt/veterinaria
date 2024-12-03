@@ -7,12 +7,12 @@ Somos [**Vitapet🐾**](http://127.0.0.1:5000 "Conocenos") una web de Clínica V
 ---
 ### **Contamos con:** 
 * Baño 
-    * Bañamos a tus mascotas. 🐕🐈🐦![B](perrobañado.png)
+    * Bañamos a tus mascotas. 🐕🐈🐦![B](app/static/imagenes/icono1.png)
 * Consultas
-    * Consultas medicas o de revision para cualquiera de tus mascotas.![C](animales.png)
+    * Consultas medicas o de revision para cualquiera de tus mascotas.![C](app/static/imagenes/icono2.png)
 * Servicios
     * Nuestros servicios todo el día todos los días.
-    ![24/7](247.png)
+    ![24/7](app/static/imagenes/icono3.png)
  ---
 ## Metodología de las 6D
 ## 1. Descripción del problema:
@@ -23,9 +23,11 @@ Somos [**Vitapet🐾**](http://127.0.0.1:5000 "Conocenos") una web de Clínica V
 • Un Sistema de Gestión Veterinaria: Este sistema de gestión está diseñado para facilitar la administración de pacientes (animales), dueños, y servicios veterinarios, permitiendo un control eficiente de citas e historiales médicos.
 ## 3. Diseño de la Solución:
 **Pseudocodigo**
-![imagen](PSeudo.jpg)
+![imagen](app/static/imagenes/pseudocodigo1.png)
+![imagen](app/static/imagenes/pseudocodigo2.png)
+![imagen](app/static/imagenes/pseudocodigo3.png)
 **Diagrama de flujo**
-![imagen2](Pseudodiseño.jpg)
+![pruebas](app/static/imagenes/pruebas.png)
 
 ## 4. Desarrollo de la solución
 **Clases Python**
@@ -35,10 +37,7 @@ Somos [**Vitapet🐾**](http://127.0.0.1:5000 "Conocenos") una web de Clínica V
 ![clases4](clases4.jpg)
 ## 5. Depuración y Pruebas:
 
-![pruebas](pruebas1.jpg)
-![pruebas2](pruebas2PSeInt.jpg)
-![pruebas3](pruebas3PSeInt.jpg)
-![pruebas4](pruebas4PSeInt.jpg)
+![pruebas1](app/static/imagenes/diagrama1.jpg)
 
 ## 6. Documentación:
 ### **Cómo funciona:**
