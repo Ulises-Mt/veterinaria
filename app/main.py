@@ -22,5 +22,15 @@ def registro():
 def base_datos():
     return render_template('base-datos.html')
 
+#ruta para la pagina de agendar cita
+@app.route('/citas')
+def citas():
+    return render_template('citas.html')
+
+#ruta para la pagina de agendar cita
+@app.route('/diagnostico', endpoint='diagnostico')
+def diagnostico():
+    return render_template('diagnostico.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script  src="../static/js/tercerscript.js" defer></script>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>VitaPet</title>
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">VitaPet</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu"> 
+            <a href="{{ url_for('home') }}">Inicio</a>
+            <a href="{{ url_for('sobre_nosotros') }}">Sobre Nosotros</a>
+            <a href="{{ url_for('base_datos') }}">Base de Datos</a>
+            <a href="{{ url_for('citas') }}">Agneda una citas</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+
+    <form id="diagnostico-form">
+        <div class="estilo-diagnostico">
+            <h1>Registro de Diagnósticos y Tratamientos</h1>
+            
+            <!-- Inputs para registrar diagnósticos -->
+            <div id="formulario-diagnostico">
+                <label for="nombre-paciente">Nombre del Paciente:</label>
+                <input type="text" id="nombre-paciente" required>
+                
+                <label for="diagnostico">Diagnóstico:</label>
+                <input type="text" id="diagnostico" required>
+                
+                <label for="tratamiento">Tratamiento:</label>
+                <input type="text" id="tratamiento" required>
+                
+                <label for="observaciones">Observaciones:</label><br>
+                <textarea id="observaciones"></textarea>
+                
+                <button type="submit">Guardar</button>
+            </div>
+            
+            <div class="botones-acciones">
+                <button type="button" id="boton-mostrar">Mostrar Diagnósticos</button>
+                <button type="button" id="boton-borrar">Borrar Diagnósticos</button>
+            </div>
+
+            <!-- Tabla para mostrar los datos -->
+            <h2>Registros</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Diagnóstico</th>
+                        <th>Tratamiento</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-registros">
+                    <!-- Registros dinámicos aquí -->
+                </tbody>
+            </table>
+
+            <button type="button" id="boton-descargar">Descargar Registros</button>
+        </div>
+    </form>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

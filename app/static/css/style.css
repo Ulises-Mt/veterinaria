@@ -379,7 +379,7 @@ button:hover {
   
 /* Estilo de agendar citas */
 
-#agenda-cita{
+#diagnosticar{
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f9;
     margin: 0;
@@ -417,6 +417,47 @@ section h6{
 #cita-form input,
 #cita-motivo,
 #animal,
+button
+{
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Diagnosticos */
+
+#diagnostico-form{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ddddea;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    flex-direction: column;
+}
+
+.estilo-diagnostico{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+#diagnostico-form label{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+#diagnostico-form input,
 button
 {
     width: 100%;
