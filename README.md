@@ -56,8 +56,7 @@ Somos [**Vitapet🐾**](http://127.0.0.1:5000 "Conocenos") una web de Clínica V
 • Se agenda automáticamente una cita médica con el veterinario.
 
 **3. Salida:**
-
-**6. Documentación:** 
+ 
 • El sistema confirma el registro del animal.
 • Proporciona la fecha, hora y nombre del veterinario asignado.
 Ejemplo de uso:
