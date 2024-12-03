@@ -15,15 +15,32 @@ Somos [**Vitapet🐾**](http://127.0.0.1:5000 "Conocenos") una web de Clínica V
     ![24/7](247.png)
  ---
 ## Metodología de las 6D
-## 1.Descripción del problema:
+## 1. Descripción del problema:
  **• Diseñar un sistema para registrar animales, categorías (especies/razas) y dueños.**
 • Implementar funciones para registrar animales en la base de datos, gestionar citas médicas, y así realizar un registro en el que tendremos datos mas específicos de los pacientes caninos, felinos y aves.
 • Considerar la posibilidad de diferentes tipos de animales, con atributos específicos como especie, raza, edad, peso y estado de salud. Este sistema de gestión veterinaria está diseñado para facilitar la administración de pacientes, dueños, y servicios relacionados con el cuidado animal.
 ## 2. Definición de la solución:
 • Un Sistema de Gestión Veterinaria: Este sistema de gestión está diseñado para facilitar la administración de pacientes (animales), dueños, y servicios veterinarios, permitiendo un control eficiente de citas e historiales médicos.
-## 3.Diseño de la Solución:
- 
-## 6.Documentación:
+## 3. Diseño de la Solución:
+**Pseudocodigo**
+![imagen](PSeudo.jpg)
+**Diagrama de flujo**
+![imagen2](Pseudodiseño.jpg)
+
+## 4. Desarrollo de la solución
+**Clases Python**
+![clases1](clases1.jpg)
+![clases2](clases2.jpg)
+![clases3](clases3.jpg)
+![clases4](clases4.jpg)
+## 5. Depuración y Pruebas:
+
+![pruebas](pruebas1.jpg)
+![pruebas2](pruebas2PSeInt.jpg)
+![pruebas3](pruebas3PSeInt.jpg)
+![pruebas4](pruebas4PSeInt.jpg)
+
+## 6. Documentación:
 ### **Cómo funciona:**
 **1. Ingreso de datos:**
 
@@ -40,6 +57,7 @@ Somos [**Vitapet🐾**](http://127.0.0.1:5000 "Conocenos") una web de Clínica V
 
 **3. Salida:**
 
+**6. Documentación:** 
 • El sistema confirma el registro del animal.
 • Proporciona la fecha, hora y nombre del veterinario asignado.
 Ejemplo de uso:
